@@ -34,12 +34,12 @@ header button {
 }
 
 /* header */
-/* flex-container aside + main */
 .flex-container {
   display: flex;
 }
 
-/* aside */
+/* aside (top, central, bottom)*/
+/* aside top */
 aside {
   width: 58.75px;
   display: flex;
@@ -85,6 +85,7 @@ aside span {
   display: none;
 }
 
+/* aside playlist section */
 aside h3 {
   display: none;
   text-transform: uppercase;
@@ -101,10 +102,6 @@ aside h3 {
   margin-bottom: 15px;
 }
 
-.div-crea-playlist span {
-  font-size: 34px;
-}
-
 aside .plus-square {
   display: none;
   height: 100%;
@@ -116,12 +113,9 @@ aside .plus-square {
   margin-right: 5px;
 }
 
-aside .div-creaplaylist .plus-square {
-  display: none;
-}
-
-aside .plus-square span {
+aside .div-crea-playlist .plus-square span {
   color: #000;
+  font-size: 34px;
 }
 
 aside .span-crea-playlist {
@@ -129,6 +123,7 @@ aside .span-crea-playlist {
   font-size: 18px;
 }
 
+/* aside central section */
 .aside-central-content {
   width: 100%;
   display: none;
@@ -141,6 +136,7 @@ aside .span-crea-playlist {
   color: #646464;
 }
 
+/* aside central section */
 /* aside bottom section */
 .aside-bottom .div-installa-app {
   font-size: 30px;
@@ -161,7 +157,8 @@ aside .span-crea-playlist {
 }
 
 /* aside bottom section */
-/* aside */
+/*finish entire aside bar */
+/* main */
 main {
   padding-top: 70px;
   overflow-y: auto;
@@ -177,15 +174,113 @@ main .prova {
   height: 300px;
 }
 
-/* flex-container aside + main */
+/* main */
 /* footer */
 footer {
+  display: flex;
   left: 0;
   bottom: 0;
   position: fixed;
   background-color: #282828;
   height: 70px;
   width: 100vw;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer section.left {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer section.left .sinister-img {
+  background-image: url('https://media2.fdncms.com/memphisflyer/imager/sinister-thoughts-my-analysis-on-the-horror-film-sinister/u/original/3284729/1351028493-sinister.jpg');
+  background-size: cover;
+  background-position: bottom;
+  width: 70px;
+  height: 50px;
+  overflow: hidden;
+}
+
+footer section.left img {
+  width: 100px;
+}
+
+footer section.left .title-left h4 {
+  color: #fff;
+}
+
+footer section.left .title-left {
+  padding-left: 10px;
+  color: #626262;
+}
+
+footer section.left .heart-folder-icon {
+  color: #696969;
+  font-size: 23px;
+}
+
+/* section footer center */
+footer section.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 33%;
+}
+
+footer section.center .media-player-controls {
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  font-size: 17px;
+}
+
+.fa-play-circle {
+  font-size: 27px;
+}
+
+.fa-redo-alt {
+  font-size: 15px;
+}
+
+footer section.center .range-time-level {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer section.center .range-time-level {
+
+  color: #fff;
+  font-size: 12px;
+}
+
+footer section.center div.range-time {
+  width: 80%;
+}
+
+footer section.center div.range-time input {
+  width: 100%;
+}
+
+
+footer section.center .range-time-level span {
+  font-size: 10px;
+}
+
+footer section.right {
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
 }
 
 /* footer */
@@ -204,33 +299,7 @@ aside span {
 }
 
 /* display none xs */
-/* scrollbar */
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* #FBFBFB */
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 6px;
-  background: #302626;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background: grey;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: lightgrey;
-}
-
-/* scrollbar */
-/* media-qerries */
-/* meddia querie sm  */
+/* meddia query: sm >= 768px */
 @media all and (min-width: 768px) {
   .aside-bottom .div-profile-name {
     padding-top: 5px;
@@ -299,7 +368,34 @@ aside span {
   }
 }
 
+/*  finish meddia query: sm >= 768px */
 /* utility */
 .text-center {
   text-align: center;
 }
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* #FBFBFB */
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background: #302626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: grey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightgrey;
+}
+
+/* scrollbar */
