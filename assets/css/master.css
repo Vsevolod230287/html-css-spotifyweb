@@ -155,10 +155,13 @@ aside .span-crea-playlist {
   font-weight: 600;
   color: #fff;
 }
-
 /* aside bottom section */
-/*finish entire aside bar */
+/*finish aside bar */
+
+
+
 /* main */
+
 main {
   padding-top: 70px;
   overflow-y: auto;
@@ -346,9 +349,6 @@ aside span {
     line-height: 30px;
   }
 
-  main {
-    width: calc(100vw - 175px);
-  }
 
   header {
     width: calc(100vw - 175px);
@@ -356,7 +356,7 @@ aside span {
 
   aside {
     padding-right: 0;
-    width: 175px;
+    width: 210px;
     align-items: flex-start;
   }
 
