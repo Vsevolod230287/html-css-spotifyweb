@@ -155,13 +155,10 @@ aside .span-crea-playlist {
   font-weight: 600;
   color: #fff;
 }
+
 /* aside bottom section */
 /*finish aside bar */
-
-
-
 /* main */
-
 main {
   padding-top: 70px;
   overflow-y: auto;
@@ -284,7 +281,6 @@ footer section.center .range-time-level span {
   font-size: 10px;
 }
 
-
 /* section footer right */
 footer section.right {
   align-items: center;
@@ -313,6 +309,10 @@ aside span {
 /* display none xs */
 /* meddia query: sm >= 768px */
 @media all and (min-width: 768px) {
+
+  header {
+    width: calc(100vw - 175px);
+  }
   .aside-bottom .div-profile-name {
     padding-top: 5px;
     font-size: 17px;
@@ -349,14 +349,11 @@ aside span {
     line-height: 30px;
   }
 
-
-  header {
-    width: calc(100vw - 175px);
-  }
-
   aside {
+    flex-grow: 0;
+    flex-shrink: 0;
     padding-right: 0;
-    width: 210px;
+    width: 175px;
     align-items: flex-start;
   }
 
