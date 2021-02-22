@@ -160,19 +160,67 @@ aside .span-crea-playlist {
 /*finish aside bar */
 /* main */
 main {
-  padding-top: 70px;
+  padding: 70px 10px;
   overflow-y: auto;
   background-color: #141922;
   width: 100%;
   height: calc(100vh - 70px);
 }
 
-main .prova {
-  background-color: blue;
-  margin: 20px;
-  width: 200px;
-  height: 300px;
+main section.main-list-menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+main section.main-list-menu ul li {
+  padding: 0 15px;
+  line-height: 50px;
+}
+
+main section.main-list-menu ul li a {
+  color: #74777B;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+main section.recently-played {
+
+  color: #fff;
+}
+
+main section.recently-played h1 {
+  padding: 10px;
+}
+
+.main-flex-container {
+  justify-content: space-between;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+main section.recently-played img {
+}
+
+main .main-box {
+  text-align: center;
+  margin: 0 3px;
+  flex: 0 1 200px;
+}
+
+main section.recently-played h5 {
+  color: #717479;
+}
+
+.wrap-img-and-title {
+  flex: 0 1 192px;
+  text-align: center;
+}
+
+
+
 
 /* main */
 /* footer */
@@ -309,10 +357,10 @@ aside span {
 /* display none xs */
 /* meddia query: sm >= 768px */
 @media all and (min-width: 768px) {
-
   header {
     width: calc(100vw - 175px);
   }
+
   .aside-bottom .div-profile-name {
     padding-top: 5px;
     font-size: 17px;
