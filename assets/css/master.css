@@ -187,7 +187,6 @@ main section.main-list-menu ul li a {
 }
 
 main section.recently-played {
-
   color: #fff;
 }
 
@@ -195,32 +194,51 @@ main section.recently-played h1 {
   padding: 10px;
 }
 
-.main-flex-container {
-  justify-content: space-between;
+
+/* main section card */
+main .row-flex {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-main section.recently-played img {
-}
-
-main .main-box {
+.card {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 0 3px;
-  flex: 0 1 200px;
+  width: calc(100% / 6);
+
+}
+
+.wrap-box {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.img-box {
+  width: 100%;
+}
+
+.img-box img {
+width: 100%;
+}
+
+
+
+main .title-under-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+
 }
 
 main section.recently-played h5 {
   color: #717479;
 }
-
-.wrap-img-and-title {
-  flex: 0 1 192px;
-  text-align: center;
-}
-
-
-
 
 /* main */
 /* footer */
@@ -353,8 +371,26 @@ aside span {
 .aside-bottom .div-installa-app {
   border-bottom: none;
 }
-
 /* display none xs */
+
+/* @media all and (max-width: 1600px) {
+  .card {
+    width: calc(100% / 4 - 24px);
+  }
+} */
+
+@media all and (max-width: 1200px) {
+  .card {
+    width: calc(100% / 4);
+  }
+}
+
+@media all and (max-width: 992px) {
+  .card {
+    width: calc(100% / 3 );
+  }
+ }
+
 /* meddia query: sm >= 768px */
 @media all and (min-width: 768px) {
   header {
@@ -420,9 +456,26 @@ aside span {
     font-size: 15px;
     line-height: 35px;
   }
-}
+}  /*  finish meddia query: sm >= 768px */
 
-/*  finish meddia query: sm >= 768px */
+@media all and (max-width: 767px) {
+  .card {
+    width: calc(100% / 3 );
+  }
+  
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 /* utility */
 .text-center {
   text-align: center;
