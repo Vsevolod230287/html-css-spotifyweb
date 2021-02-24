@@ -33,6 +33,12 @@
            border-radius: 15px;
          }
 
+          header button:hover {
+            cursor: pointer;
+            font-size: 15px;
+          }
+
+
          /* header */
          .flex-container {
            display: flex;
@@ -75,6 +81,10 @@
            line-height: 50px;
          }
 
+         aside ul li:hover {
+           color: white;
+         }
+
          .aside-side-of-top ul li i.fas {
            text-align: center;
            width: 100%;
@@ -102,6 +112,8 @@
            margin-bottom: 15px;
          }
 
+
+
          aside .plus-square {
            display: none;
            height: 100%;
@@ -111,6 +123,12 @@
            background-color: #a3a3a3;
            padding: 0px 9px;
            margin-right: 5px;
+         }
+         .div-crea-playlist:hover {
+           color:white;
+         }
+         .div-crea-playlist:hover .plus-square {
+           background-color: white;
          }
 
          aside .div-crea-playlist .plus-square span {
@@ -136,6 +154,10 @@
            color: #646464;
          }
 
+         .aside-central-content ul li a:hover {
+           color: white;
+         }
+
          /* aside central section */
          /* aside bottom section */
          .aside-bottom .div-installa-app {
@@ -143,6 +165,10 @@
            line-height: 50px;
            padding: 5px 0;
            border-bottom: 1px solid #646464;
+         }
+
+         .div-installa-app:hover {
+           color: #fff;
          }
 
          .aside-bottom .div-profile-name {
@@ -191,6 +217,8 @@
            padding-top: 10px;
          }
 
+
+
          main nav.menu ul li:after {
            border-bottom: 1px solid red;
            bottom: -5px;
@@ -203,6 +231,7 @@
            display: none;
          }
 
+         main nav.menu ul li:active:after,
          main nav.menu ul li:hover:after {
            display: block;
          }
@@ -212,6 +241,10 @@
            text-decoration: none;
            text-transform: uppercase;
            font-weight: 600;
+         }
+
+         main nav.menu ul li a:hover {
+           color: white;
          }
 
          /* main section card */
@@ -237,7 +270,7 @@
          }
 
          .img-box {
-         position: relative;
+           position: relative;
            width: 100%;
          }
 
@@ -249,8 +282,36 @@
            display: none;
          }
 
-         .img-box:hover  .overlay{
-          display: block;
+         .img-box:hover .overlay {
+           cursor: pointer;
+           z-index: 1;
+           display: block;
+         }
+
+         .overlay-radar {
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(255, 255, 255, 0.3);
+         }
+
+         .overlay-radar i.fab.fa-spotify {
+           font-size: 20px;
+           position: absolute;
+           top: 21px;
+           left: 21px;
+         }
+
+         .title-radar {
+           font-weight: 600;
+           position: absolute;
+           bottom: 25px;
+           left: 15px;
+           text-align: left;
+         }
+
+         h3.purple {
+           font-weight: 900;
          }
 
          .card i {
@@ -268,6 +329,7 @@
          }
 
          main .title-under-img {
+           padding-top: 7px;
            display: flex;
            flex-direction: column;
            justify-content: center;
@@ -322,10 +384,6 @@
            overflow: hidden;
          }
 
-         footer section.left img {
-           width: 100px;
-         }
-
          footer section.left .title-left {
            padding-left: 10px;
            color: #626262;
@@ -335,11 +393,19 @@
            color: #fff;
          }
 
+         footer section.left .title-left h5:hover {
+           color: #fff;
+         }
+
          footer section.left .heart-folder-icon {
            display: flex;
            flex-direction: column;
            color: #696969;
            font-size: 23px;
+         }
+
+         footer section.left .heart-folder-icon i:hover {
+           color: white;
          }
 
          /* section footer center */
@@ -389,6 +455,7 @@
          footer section.center .range-time-level span {
            font-size: 10px;
          }
+
 
          /* section footer right */
          footer section.right {
@@ -508,6 +575,10 @@
          /* utility */
          .pb-10 {
            padding-bottom: 10px;
+         }
+
+         .purple {
+           color: #041d34;
          }
 
          .text-center {
